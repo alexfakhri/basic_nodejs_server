@@ -3,8 +3,11 @@
 var express = require('express');
 var app = express();
 
+app.set('view engine', 'pug')
+app.set('views', __dirname + '/views')
+
 app.get('/', function(request, response) {
-  response.send('Hello World!!');
+  response.render('index')
 });
 
 app.get('/about', function(request, response) {
