@@ -7,5 +7,10 @@ app.get('/', function(request, response) {
   response.send('Hello World!!');
 });
 
-app.listen(8080);
-console.log("App listening on port 8080");
+app.get('/about', function(request, response) {
+  response.send('Hello World!!');
+});
+
+app.listen(3000, function(){
+  console.log("App listening on port 3000");
+});
