@@ -11,7 +11,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/about', function(request, response) {
-  response.send('Hello World!!');
+  response.render('about');
 });
 
 app.listen(3000, function(){
